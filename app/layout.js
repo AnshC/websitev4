@@ -1,6 +1,5 @@
 import { Montserrat, Instrument_Serif } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -24,7 +23,6 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.variable} ${instrument_serif.variable} antialiased`}
       >
-        <Navbar />
         {children}
       </body>
     </html>

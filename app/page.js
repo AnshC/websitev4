@@ -1,11 +1,51 @@
-import Hero from "@/components/Home/Hero";
+// app/page.js (or wherever)
+"use client";
+import { useState, useEffect, useRef } from "react";
+import Navbar from "@/components/Navbar";
+import DesignSection from "@/components/home/Design";
+import Hero from "@/components/home/Hero";
+import ProjectSection from "@/components/home/Projects";
+import styles from "./page.module.css";
 
 export default function Home() {
+  const [navVariant, setNavVariant] = useState("foreground");
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    const designSection = document.getElementById("design");
+    
+    if (!container || !designSection) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setNavVariant(entry.isIntersecting ? "background" : "foreground");
+      },
+      {
+        root: container,
+        threshold: 0.6, 
+      }
+    );
+
+    observer.observe(designSection);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="font-sans">
-      <main>
+    <div ref={containerRef} className={`font-sans ${styles.homeComponent}`}>
+      <Navbar variant={navVariant} />
+
+      <main className="h-[100vh]">
         <Hero />
       </main>
+
+      <section id="design" className="h-[100vh]">
+        <DesignSection />
+      </section>
+
+      <section className="h-[100vh]">
+        <ProjectSection />
+      </section>
     </div>
   );
 }
