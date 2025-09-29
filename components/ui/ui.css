@@ -1,0 +1,24 @@
+/* Button Styles */
+
+.buttonShadow {
+    box-shadow: -7px 7px 0px var(--background);
+    transition: all 0.1s ease;
+}
+
+.buttonShadow:hover, .buttonShadowAlt:hover {
+    translate: -7px 7px;
+    box-shadow: none;
+}
+
+.buttonShadowAlt {
+    transition: all 0.1s ease;
+    box-shadow: -7px 7px 0px var(--foreground);
+}
+
+.cardComponent {
+    transition: all 0.1s ease;
+}
+
+.cardComponent:hover {
+    transform: scale(1.07);
+}
