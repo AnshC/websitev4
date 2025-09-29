@@ -1,8 +1,15 @@
 import Image from "next/image";
 
 import SplitText from "@/components/external/SplitText";
+import CircularText from "@/components/external/CircleText";
 
-export default function Hero() {
+export default function Hero({ designRef }) {
+  const handleClick = () => {
+    if (designRef.current) {
+      designRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="relative h-full flex items-center justify-center">
       <div className="relative h-full aspect-square rounded-full overflow-hidden">
@@ -10,7 +17,8 @@ export default function Hero() {
           src="/img/hero.jpg"
           alt="Hero"
           fill
-          className="object-cover grayscale"
+          priority
+          className="object-cover grayscale brightness-50"
         />
       </div>
       <div className="absolute text-center text-foreground flex flex-col">
@@ -40,8 +48,14 @@ export default function Hero() {
           rootMargin="0"
           textAlign="center"
         />
-        {/* <h1 className="text-9xl font-black tracking-tighter">Ansh Chauhan</h1> */}
-        {/* <h2 className="font-serif text-4xl">Web Dev. Design. Coffee.</h2> */}
+      </div>
+      <div className="absolute bottom-0 right-0 m-30" onClick={handleClick}>
+        <CircularText
+          text="SCROLL*DOWN*"
+          onHover="speedUp"
+          spinDuration={20}
+          className="absolute"
+        />
       </div>
     </div>
   );

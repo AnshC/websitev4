@@ -1,13 +1,17 @@
 // app/page.js (or wherever)
 "use client";
 import { useState, useEffect, useRef } from "react";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/ui/Navbar";
 import DesignSection from "@/components/home/Design";
 import Hero from "@/components/home/Hero";
 import ProjectSection from "@/components/home/Projects";
+import ContactSection from "@/components/home/Contact";
 import styles from "./page.module.css";
 
 export default function Home() {
+
+  const designRef = useRef(null);
+
   const [navVariant, setNavVariant] = useState("foreground");
   const containerRef = useRef(null);
 
@@ -36,15 +40,19 @@ export default function Home() {
       <Navbar variant={navVariant} />
 
       <main className="h-[100vh]">
-        <Hero />
+        <Hero designRef={designRef}/>
       </main>
 
-      <section id="design" className="h-[100vh]">
+      <section id="design" className="h-[100vh]" ref={designRef}>
         <DesignSection />
       </section>
 
       <section className="h-[100vh]">
         <ProjectSection />
+      </section>
+
+      <section className="h-[100vh]">
+        <ContactSection />
       </section>
     </div>
   );

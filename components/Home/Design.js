@@ -1,14 +1,20 @@
 import CircularGallery from "@/components/external/CircularGallery";
 import ShadowText from "@/components/text/ShadowText";
+import Button from "@/components/ui/Button";
+
+import { TiArrowRightThick } from "react-icons/ti";
+import { FaInstagram } from "react-icons/fa";
 
 export default function DesignSection() {
   return (
-    <div className="bg-foreground w-full text-background flex flex-col align-center justify-center h-full">
-      <ShadowText>Designs.</ShadowText>
+    <div className="bg-foreground w-full text-background flex flex-col justify-center h-full">
+      <ShadowText className={"px-40"}>Design.</ShadowText>
       <p className="font-serif text-4xl px-40">
-        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus
-        ex sapien vitae pellentesque sem placerat. In id cursus mi pretium
-        tellus duis convallis.
+        “Design is not just what it looks like and feels like. Design is how it
+        works." Every project showcased here explores the balance between
+        aesthetics and functionality, focusing on clarity, purpose, and
+        thoughtful execution. From concept to final detail, each piece is
+        crafted to create meaningful and engaging experiences.
       </p>
       <div style={{ height: "400px", position: "relative" }}>
         <CircularGallery
@@ -17,6 +23,14 @@ export default function DesignSection() {
           borderRadius={0.05}
           scrollEase={0.01}
         />
+      </div>
+      <div className="flex justify-between px-40">
+        <Button href="/designs" icon={<TiArrowRightThick />}>
+          View Designs
+        </Button>
+        <Button href="https://instagram.com/ansh.psd/" icon={<FaInstagram />}>
+          @ansh.psd
+        </Button>
       </div>
     </div>
   );
