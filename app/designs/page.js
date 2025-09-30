@@ -1,9 +1,6 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import styles from "./page.module.css";
-
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 import HighlightSection from "@/components/design/Highlights";
@@ -11,16 +8,15 @@ import CarSection from "@/components/design/Cars";
 import MiscSection from "@/components/design/Misc";
 import ProjectSection from "@/components/design/Projects";
 
+import styles from "./page.module.css";
+
 export default function Designs() {
   const [currentView, setCurrentView] = useState(0);
 
-  const handleBackClick = () => {
+  const handleBackClick = () =>
     setCurrentView((prev) => (prev === 0 ? 3 : prev - 1));
-  };
-
-  const handleForwardClick = () => {
+  const handleForwardClick = () =>
     setCurrentView((prev) => (prev === 3 ? 0 : prev + 1));
-  };
 
   const views = [
     <HighlightSection key="highlights" />,
@@ -30,26 +26,31 @@ export default function Designs() {
   ];
 
   return (
-    <div className="w-full h-[100vh]">
+    <div className="w-full h-[100vh] relative">
+      {/* Header */}
       <div className="px-40 flex absolute justify-between font-serif py-10 text-4xl w-full z-20">
         <Link href="/">
           <h1>Ansh Chauhan</h1>
         </Link>
         <h1>Design Portfolio</h1>
       </div>
-      <div className="w-full h-full font-sans relative overflow-hidden">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={currentView}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="w-full h-full absolute top-0 left-0"
+
+      {/* Views */}
+      <div className="w-full h-full font-sans relative">
+        {views.map((view, i) => (
+          <div
+            key={i}
+            className={`absolute top-0 left-0 w-full h-full transition-opacity duration-300`}
+            style={{
+              opacity: currentView === i ? 1 : 0,
+              pointerEvents: currentView === i ? "auto" : "none",
+            }}
           >
-            {views[currentView]}
-          </motion.div>
-        </AnimatePresence>
+            {view}
+          </div>
+        ))}
+
+        {/* Navigation Arrows */}
         <div className="absolute h-full w-full flex justify-between text-4xl z-10">
           <div
             onClick={handleBackClick}
