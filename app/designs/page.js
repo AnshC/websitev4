@@ -27,15 +27,12 @@ export default function Designs() {
 
   return (
     <div className="w-full h-[100vh] relative">
-      {/* Header */}
       <div className="px-40 flex absolute justify-between font-serif py-10 text-4xl w-full z-20">
         <Link href="/">
           <h1>Ansh Chauhan</h1>
         </Link>
         <h1>Design Portfolio</h1>
       </div>
-
-      {/* Views */}
       <div className="w-full h-full font-sans relative">
         {views.map((view, i) => (
           <div
@@ -49,8 +46,6 @@ export default function Designs() {
             {view}
           </div>
         ))}
-
-        {/* Navigation Arrows */}
         <div className="absolute h-full w-full flex justify-between text-4xl z-10">
           <div
             onClick={handleBackClick}
