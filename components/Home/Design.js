@@ -11,10 +11,8 @@ export default function DesignSection() {
       <ShadowText className={"px-40"}>Design.</ShadowText>
       <p className="font-serif text-4xl px-40">
         “Design is not just what it looks like and feels like. Design is how it
-        works." Every project showcased here explores the balance between
-        aesthetics and functionality, focusing on clarity, purpose, and
-        thoughtful execution. From concept to final detail, each piece is
-        crafted to create meaningful and engaging experiences.
+        works." From concept to final detail, each piece is crafted to create
+        meaningful and engaging experiences.
       </p>
       <div style={{ height: "400px", position: "relative" }}>
         <CircularGallery
