@@ -10,9 +10,14 @@ export default function Gallery() {
         </Link>
         <h1>Gallery</h1>
       </div>
-      <p className="absolute z-20 bottom-0 px-40 py-10 text-3xl w-[70%]">
-        A collection of my memories. Places I've been,  
-      </p>
+      <div className="absolute z-20 bottom-0 px-40 py-10">
+        <h1 className="px-5 py-2 bg-background text-6xl font-bold">
+          Cars. Coffee. Cities. Sound.
+        </h1>
+        <p className="px-5 py-2 bg-background text-3xl w-[70%]">
+          Just the things that keep me inspired.
+        </p>
+      </div>
       <DomeGallery segments={30} />
     </div>
   );
