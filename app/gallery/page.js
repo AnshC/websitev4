@@ -8,7 +8,7 @@ export default function Gallery() {
         <Link href="/">
           <h1>Ansh Chauhan</h1>
         </Link>
-        <h1>Photos I like.</h1>
+        <h1>My Camera Roll Highlights.</h1>
       </div>
       <DomeGallery segments={30} />
     </div>
