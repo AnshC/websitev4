@@ -4,39 +4,58 @@ import { useGesture } from '@use-gesture/react';
 
 const DEFAULT_IMAGES = [
   {
-    src: 'https://images.unsplash.com/photo-1755331039789-7e5680e26e8f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Abstract art'
+    src: "/img/gallery/1.jpg",
+    alt: "Lamborghini Diablo"
   },
   {
-    src: 'https://images.unsplash.com/photo-1755569309049-98410b94f66d?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Modern sculpture'
+    src: "/img/gallery/2.jpg",
+    alt: "Infinti G35 Coupe"
   },
   {
-    src: 'https://images.unsplash.com/photo-1755497595318-7e5e3523854f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Digital artwork'
+    src: "/img/gallery/3.jpg",
+    alt: "Some Car in Colorado"
   },
   {
-    src: 'https://images.unsplash.com/photo-1755353985163-c2a0fe5ac3d8?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Contemporary art'
+    src: "/img/gallery/4.jpg",
+    alt: "Snowboarding in Colorado"
   },
   {
-    src: 'https://images.unsplash.com/photo-1745965976680-d00be7dc0377?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Geometric pattern'
+    src: "/img/gallery/5.jpg",
+    alt: "The Weeknd Concert"
   },
   {
-    src: 'https://images.unsplash.com/photo-1752588975228-21f44630bb3c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: 'Textured surface'
+    src: "/img/gallery/6.jpg",
+    alt: "The Smokies"
   },
   {
-    src: 'https://pbs.twimg.com/media/Gyla7NnXMAAXSo_?format=jpg&name=large',
-    alt: 'Social media image'
+    src: "/img/gallery/7.jpg",
+    alt: "Lamborghini Diablo"
+  },
+  {
+    src: "/img/gallery/8.jpg",
+    alt: "Red Porsche"
+  },
+  {
+    src: "/img/gallery/9.jpg",
+    alt: "Lamborghini Aventador SVJ"
+  },
+  {
+    src: "/img/gallery/10.jpg",
+    alt: "Bakers Beach (California)"
+  },{
+    src: "/img/gallery/11.jpg",
+    alt: "Golden Gate Bridge"
+  }
+  ,{
+    src: "/img/gallery/12.jpg",
+    alt: "Lamborghini Diablo"
   }
 ];
 
 const DEFAULTS = {
   maxVerticalRotationDeg: 5,
   dragSensitivity: 20,
-  enlargeTransitionMs: 300,
+  enlargeTransitionMs: 250,
   segments: 35
 };
 
@@ -121,10 +140,10 @@ export default function DomeGallery({
   enlargeTransitionMs = DEFAULTS.enlargeTransitionMs,
   segments = DEFAULTS.segments,
   dragDampening = 2,
-  openedImageWidth = '400px',
-  openedImageHeight = '400px',
-  imageBorderRadius = '30px',
-  openedImageBorderRadius = '30px',
+  openedImageWidth = '800px',
+  openedImageHeight = '700px',
+  imageBorderRadius = '20px',
+  openedImageBorderRadius = '20px',
   grayscale = false
 }) {
   const rootRef = useRef(null);
