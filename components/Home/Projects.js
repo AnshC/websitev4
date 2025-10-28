@@ -1,4 +1,4 @@
-import ShadowText from "@/components/text/ShadowText";
+import ShadowText from "@/components/ui/ShadowText";
 
 import Button from "@/components/ui/Button";
 import { TiArrowRightThick } from "react-icons/ti";
@@ -9,7 +9,6 @@ import { LuRotate3D } from "react-icons/lu";
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
-
 
 import Card from "@/components/ui/Card";
 

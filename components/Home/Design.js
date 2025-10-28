@@ -1,5 +1,5 @@
 import CircularGallery from "@/components/external/CircularGallery";
-import ShadowText from "@/components/text/ShadowText";
+import ShadowText from "@/components/ui/ShadowText";
 import Button from "@/components/ui/Button";
 
 import { TiArrowRightThick } from "react-icons/ti";

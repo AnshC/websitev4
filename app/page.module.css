@@ -1,10 +1,10 @@
 .homeComponent {
-  height: 100vh; /* full viewport height */
-  overflow-y: scroll; /* enable vertical scroll */
-  scroll-snap-type: y mandatory;
+    height: 100vh; /* full viewport height */
+    overflow-y: scroll; /* enable vertical scroll */
+    scroll-snap-type: y mandatory;
 }
 
 .homeComponent main,
 .homeComponent section {
-  scroll-snap-align: start;
+    scroll-snap-align: start;
 }
