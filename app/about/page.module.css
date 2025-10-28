@@ -1,0 +1,10 @@
+.aboutComponent {
+    height: 100vh; /* full viewport height */
+    overflow-y: scroll; /* enable vertical scroll */
+    scroll-snap-type: y mandatory;
+}
+
+.aboutComponent main,
+.aboutComponent section {
+    scroll-snap-align: start;
+}
