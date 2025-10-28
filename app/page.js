@@ -2,14 +2,13 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "@/components/ui/Navbar";
-import DesignSection from "@/components/home/Design";
-import Hero from "@/components/home/Hero";
-import ProjectSection from "@/components/home/Projects";
-import ContactSection from "@/components/home/Contact";
+import DesignSection from "@/components/pages/home/Design";
+import Hero from "@/components/pages/home/Hero";
+import ProjectSection from "@/components/pages/home/Projects";
+import ContactSection from "@/components/pages/home/Contact";
 import styles from "./page.module.css";
 
 export default function Home() {
-
   const designRef = useRef(null);
 
   const [navVariant, setNavVariant] = useState("foreground");
@@ -18,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     const container = containerRef.current;
     const designSection = document.getElementById("design");
-    
+
     if (!container || !designSection) return;
 
     const observer = new IntersectionObserver(
@@ -27,8 +26,8 @@ export default function Home() {
       },
       {
         root: container,
-        threshold: 0.6, 
-      }
+        threshold: 0.6,
+      },
     );
 
     observer.observe(designSection);
@@ -40,7 +39,7 @@ export default function Home() {
       <Navbar variant={navVariant} />
 
       <main className="h-[100vh]">
-        <Hero designRef={designRef}/>
+        <Hero designRef={designRef} />
       </main>
 
       <section id="design" className="h-[100vh]" ref={designRef}>

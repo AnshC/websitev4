@@ -1,5 +1,5 @@
 import { Montserrat, Instrument_Serif } from "next/font/google";
-import ClickSpark from "@/components/external/ClickSpark";
+import ClickSpark from "@/components/ui/ClickSpark";
 import "./globals.css";
 
 const montserrat = Montserrat({

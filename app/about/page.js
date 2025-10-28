@@ -1,6 +1,6 @@
-import Coffee from "@/components/about/Coffee";
-import Hero from "@/components/about/Hero";
-import Tools from "@/components/about/Tools";
+import Coffee from "@/components/pages/about/Coffee";
+import Hero from "@/components/pages/about/Hero";
+import Tools from "@/components/pages/about/Tools";
 
 import styles from "./page.module.css";
 

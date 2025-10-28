@@ -1,4 +1,4 @@
-import DomeGallery from "@/components/external/DomeGallery";
+import DomeGallery from "@/components/ui/DomeGallery";
 import Link from "next/link";
 
 export default function Gallery() {

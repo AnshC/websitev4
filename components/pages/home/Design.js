@@ -1,4 +1,4 @@
-import CircularGallery from "@/components/external/CircularGallery";
+import CircularGallery from "@/components/ui/CircularGallery";
 import ShadowText from "@/components/ui/ShadowText";
 import Button from "@/components/ui/Button";
 

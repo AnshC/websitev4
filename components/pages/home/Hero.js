@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import SplitText from "@/components/external/SplitText";
-import CircularText from "@/components/external/CircleText";
+import SplitText from "@/components/ui/SplitText";
+import CircularText from "@/components/ui/CircleText";
 
 export default function Hero({ designRef }) {
   const handleClick = () => {

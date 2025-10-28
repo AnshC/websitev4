@@ -1,5 +1,5 @@
 import ShadowText from "@/components/ui/ShadowText";
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
