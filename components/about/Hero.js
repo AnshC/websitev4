@@ -37,9 +37,7 @@ export default function Hero() {
   return (
     <div className="bg-background font-serif px-40 py-10 h-full w-full flex flex-col">
       <div className="flex items-center justify-between w-full">
-        <Button href="/" icon={<FaHouseChimney />} alt>
-          Home
-        </Button>
+        <Button href="/" icon={<FaHouseChimney />} alt></Button>
         <h1 className="text-9xl font-sans font-black tracking-tighter px-10 translate-y-5">
           Ansh Chauhan
         </h1>
