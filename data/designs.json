@@ -1,0 +1,17 @@
+{
+  "designs": [
+    {
+      "id": "1",
+      "title": "The Color Violet",
+      "dimensions": {
+        "width": 600,
+        "height": 600
+      },
+      "colors": {
+        "primary": "#BA21D3"
+      },
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget aliquam aliquet, nunc nisl aliquet nisl, eget aliquam nisl nisl eget nisl.",
+      "image": "/img/designs/the-color-violet.png"
+    }
+  ]
+}
