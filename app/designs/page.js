@@ -1,9 +1,11 @@
 "use client";
-import Design from "@/components/pages/design/Design";
 import data from "@/data/designs.json";
 import { useState } from "react";
+import Image from "next/image";
+import { TiArrowRightThick, TiArrowLeftThick } from "react-icons/ti";
+import Button from "@/components/ui/Button";
 
-export default function Designs() {
+export default function Design() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   function handleLeftClick() {
@@ -19,15 +21,38 @@ export default function Designs() {
       return newIndex;
     });
   }
+  const radialBackground = {
+    background: `radial-gradient(circle at center, transparent 0%, transparent 60%, ${data.designs[currentIndex].colors.primary}50 100%)`,
+  };
 
   return (
-    <div className="w-full h-[100vh] relative">
-      <Design
-        key={data.designs[currentIndex].id}
-        data={data.designs[currentIndex]}
-        handleLeftClick={handleLeftClick}
-        handleRightClick={handleRightClick}
-      />
+    <div
+      className="w-full h-[100vh] bg-background flex items-center justify-center"
+      style={radialBackground}
+    >
+      <div className="flex items-center">
+        <Button
+          href="#"
+          icon={<TiArrowLeftThick />}
+          alt
+          onClick={handleLeftClick}
+        />
+        <div className="mx-20">
+          <Image
+            src={data.designs[currentIndex].image}
+            width={data.designs[currentIndex].dimensions.width}
+            height={data.designs[currentIndex].dimensions.height}
+            alt={data.designs[currentIndex].title}
+            priority
+          />
+        </div>
+        <Button
+          href="#"
+          icon={<TiArrowRightThick />}
+          alt
+          onClick={handleRightClick}
+        />
+      </div>
     </div>
   );
 }
