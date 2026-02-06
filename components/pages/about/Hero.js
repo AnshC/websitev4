@@ -6,34 +6,9 @@ import { FaHouseChimney } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
-import { useState, useEffect } from "react";
 
 export default function Hero() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      // Calculate mouse position relative to viewport center
-      // Normalize to -1 to 1 range
-      const x = (e.clientX / window.innerWidth - 0.5) * 2;
-      const y = (e.clientY / window.innerHeight - 0.5) * 2;
-
-      setMousePosition({ x, y });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
-  // Calculate transform based on mouse position
-  // Adjust the multiplier (20) to control the intensity of the effect
-  const imageTransform = {
-    transform: `translate(${mousePosition.x * 10}px, ${mousePosition.y * 10}px)`,
-    transition: "transform 0.3s ease-out",
-  };
+  
   return (
     <div className="bg-background font-serif px-40 py-10 h-full w-full flex flex-col">
       <div className="flex items-center justify-between w-full">
@@ -87,7 +62,6 @@ export default function Hero() {
         </div>
         <div
           className="h-full flex-1 relative flex items-end justify-center p-10"
-          style={imageTransform}
         >
           <Image
             className="translate-y-20"
