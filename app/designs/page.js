@@ -2,6 +2,7 @@
 import data from "@/data/designs.json";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Tilt from "react-parallax-tilt";
 import Button from "@/components/ui/Button";
 import { FaHouseChimney, FaInstagram } from "react-icons/fa6";
@@ -35,38 +36,39 @@ export default function Design() {
       <section className="w-full px-40 flex flex-wrap items-center justify-center z-5 mb-20">
         {items.map((img) => {
           return (
-            <div
-              key={img.id}
-              className="w-100 h-100 relative m-5"
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transition = "box-shadow 0.5s";
-                e.currentTarget.style.boxShadow = `0px 0px 1000px 300px ${img.colors.shadow}`;
-                e.currentTarget.style.borderRadius = "100px";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transition = "box-shadow 3s";
-                e.currentTarget.style.boxShadow = "none";
-                e.currentTarget.style.borderRadius = "100px";
-              }}
-            >
-              <Tilt
-                glarePosition="all"
-                perspective={1500}
-                scale={1.1}
-                tiltReverse={true}
-                tiltMaxAngleX={10}
-                tiltMaxAngleY={10}
-                className="w-100 h-100 cursor-pointer"
+            <Link href={img.url} key={img.id}>
+              <div
+                className="w-100 h-100 relative m-5"
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transition = "box-shadow 0.5s";
+                  e.currentTarget.style.boxShadow = `0px 0px 1000px 300px ${img.colors.shadow}`;
+                  e.currentTarget.style.borderRadius = "100px";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transition = "box-shadow 3s";
+                  e.currentTarget.style.boxShadow = "none";
+                  e.currentTarget.style.borderRadius = "100px";
+                }}
               >
-                <Image
-                  alt={img.title}
-                  src={img.url}
-                  fill={true}
-                  style={{ objectFit: "cover" }}
-                  priority={img.id < 7}
-                />
-              </Tilt>
-            </div>
+                <Tilt
+                  glarePosition="all"
+                  perspective={1500}
+                  scale={1.1}
+                  tiltReverse={true}
+                  tiltMaxAngleX={10}
+                  tiltMaxAngleY={10}
+                  className="w-100 h-100 cursor-pointer"
+                >
+                  <Image
+                    alt={img.title}
+                    src={img.url}
+                    fill={true}
+                    style={{ objectFit: "cover" }}
+                    priority={img.id < 7}
+                  />
+                </Tilt>
+              </div>
+            </Link>
           );
         })}
       </section>
