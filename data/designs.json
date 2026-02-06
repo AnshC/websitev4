@@ -1,17 +1,203 @@
 {
   "designs": [
     {
-      "id": "1",
-      "title": "The Color Violet",
-      "dimensions": {
-        "width": 600,
-        "height": 600
-      },
+      "id": 1,
+      "title": "the color violet",
+      "height": 600,
       "colors": {
-        "primary": "#BA21D3"
+        "shadow": "rgba(186, 33, 211, 0.2)",
+        "primary": "rgba(186, 33, 211)"
       },
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl eget aliquam aliquet, nunc nisl aliquet nisl, eget aliquam nisl nisl eget nisl.",
-      "image": "/img/designs/the-color-violet.png"
+      "img": "/img/designs/the-color-violet.png",
+      "url": "/img/designs/the-color-violet.png"
+    },
+    {
+      "id": 2,
+      "title": "gt40",
+      "colors": {
+        "shadow": "rgba(252, 40, 40, 0.2)",
+        "primary": "rgba(252, 40, 40)"
+      },
+      "height": 600,
+      "img": "/img/designs/gt40.png",
+      "url": "/img/designs/gt40.png"
+    },
+    {
+      "id": 3,
+      "title": "starry eyes",
+      "colors": {
+        "shadow": "rgba(21, 134, 202, 0.2)",
+        "primary": "rgba(21, 134, 202)"
+      },
+      "height": 600,
+      "img": "/img/designs/starry-eyes.jpg",
+      "url": "/img/designs/starry-eyes.jpg"
+    },
+    {
+      "id": 4,
+      "title": "burning love",
+      "colors": {
+        "shadow": "rgba(254, 155, 20, 0.2)",
+        "primary": "rgba(254, 155, 20)"
+      },
+
+      "height": 600,
+      "img": "/img/designs/burning-love.png",
+      "url": "/img/designs/burning-love.png"
+    },
+    {
+      "id": 5,
+      "title": "alone at prom",
+      "colors": {
+        "shadow": "rgba(236, 129, 17, 0.2)",
+        "primary": "rgba(236, 129, 17)"
+      },
+      "height": 600,
+      "img": "/img/designs/chrome.png",
+      "url": "/img/designs/chrome.png"
+    },
+    {
+      "id": 6,
+      "title": "porsche 959",
+      "colors": {
+        "shadow": "rgba(247, 229, 177, 0.2)",
+        "primary": "rgba(247, 229, 177)"
+      },
+      "height": 600,
+      "img": "/img/designs/959.png",
+      "url": "/img/designs/959.png"
+    },
+    {
+      "id": 7,
+      "title": "after hours",
+      "colors": {
+        "shadow": "rgba(189, 31, 26, 0.2)",
+        "primary": "rgba(189, 31, 26)"
+      },
+      "height": 600,
+      "img": "/img/designs/afterhours-retro.png",
+      "url": "/img/designs/afterhours-retro.png"
+    },
+    {
+      "id": 8,
+      "title": "corvette c1",
+      "colors": {
+        "shadow": "rgba(252, 188, 243, 0.2)",
+        "primary": "rgba(252, 188, 243)"
+      },
+      "height": 600,
+      "img": "/img/designs/c1.png",
+      "url": "/img/designs/c1.png"
+    },
+    {
+      "id": 9,
+      "title": "dawn fm",
+      "colors": {
+        "shadow": "rgba(210, 142, 50, 0.2)",
+        "primary": "rgba(210, 142, 50)"
+      },
+      "height": 600,
+      "img": "/img/designs/dawnfm-retro.png",
+      "url": "/img/designs/dawnfm-retro.png"
+    },
+    {
+      "id": 10,
+      "title": "aston martin db5",
+      "colors": {
+        "shadow": "rgba(45, 142, 129, 0.2)",
+        "primary": "rgba(45, 142, 129)"
+      },
+      "height": 600,
+      "img": "/img/designs/db5.png",
+      "url": "/img/designs/db5.png"
+    },
+    {
+      "id": 11,
+      "title": "deep in the water",
+      "colors": {
+        "shadow": "rgba(28, 248, 246, 0.2)",
+        "primary": "rgba(28, 248, 246)"
+      },
+      "height": 600,
+      "img": "/img/designs/deep-in-the-water.png",
+      "url": "/img/designs/deep-in-the-water.png"
+    },
+    {
+      "id": 12,
+      "title": "ferrari f40",
+      "colors": {
+        "shadow": "rgba(203, 39, 67, 0.2)",
+        "primary": "rgba(203, 39, 67)"
+      },
+      "height": 600,
+      "img": "/img/designs/f40.png",
+      "url": "/img/designs/f40.png"
+    },
+    {
+      "id": 13,
+      "title": "ford gt500",
+      "colors": {
+        "shadow": "rgba(57, 174, 255, 0.2)",
+        "primary": "rgba(57, 174, 255)"
+      },
+      "height": 600,
+      "img": "/img/designs/gt500.png",
+      "url": "/img/designs/gt500.png"
+    },
+    {
+      "id": 14,
+      "title": "montreal",
+      "colors": {
+        "shadow": "rgba(241, 226, 181, 0.2)",
+        "primary": "rgba(241, 226, 181)"
+      },
+      "height": 600,
+      "img": "/img/designs/montreal.jpg",
+      "url": "/img/designs/montreal.jpg"
+    },
+    {
+      "id": 15,
+      "title": "mclaren p1",
+      "colors": {
+        "shadow": "rgba(255, 34, 48, 0.2)",
+        "primary": "rgba(255, 34, 48)"
+      },
+      "height": 600,
+      "img": "/img/designs/p1.png",
+      "url": "/img/designs/p1.png"
+    },
+    {
+      "id": 16,
+      "title": "mazda rx7-fd",
+      "colors": {
+        "shadow": "rgba(216, 121, 60, 0.2)",
+        "primary": "rgba(216, 121, 60)"
+      },
+      "height": 600,
+      "img": "/img/designs/rx7.png, 0.2",
+      "url": "/img/designs/rx7.png"
+    },
+    {
+      "id": 17,
+      "title": "honda s2000",
+      "colors": {
+        "shadow": "rgba(255, 96, 140, 0.2)",
+        "primary": "rgba(255, 96, 140)"
+      },
+      "height": 600,
+      "img": "/img/designs/s2000.png",
+      "url": "/img/designs/s2000.png"
+    },
+    {
+      "id": 18,
+      "title": "toyota supra",
+      "colors": {
+        "shadow": "rgba(250, 130, 67, 0.2)",
+        "primary": "rgba(250, 130, 67)"
+      },
+      "height": 600,
+      "img": "/img/designs/supra.png",
+      "url": "/img/designs/supra.png"
     }
   ]
 }
