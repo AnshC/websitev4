@@ -1,0 +1,9 @@
+.designComponent {
+    width: 100%;
+    height: 100vh; /* full viewport height */
+    overflow-y: scroll; /* enable vertical scroll */
+    scroll-snap-type: y mandatory;
+}
+.designComponent section {
+    scroll-snap-align: start;
+}
