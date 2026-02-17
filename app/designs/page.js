@@ -1,4 +1,5 @@
 "use client";
+import { ReactLenis, useLenis } from "lenis/react";
 import data from "@/data/designs.json";
 import { useState } from "react";
 import Image from "next/image";
@@ -12,6 +13,7 @@ export default function Design() {
 
   return (
     <div className="w-full bg-background flex flex-col font-sans">
+      <ReactLenis />
       <div className="px-40 flex absolute justify-between font-serif py-10 text-4xl w-full z-20">
         <div className="flex items-center justify-center">
           <Button href="/" icon={<FaHouseChimney />} alt className="mr-5">
