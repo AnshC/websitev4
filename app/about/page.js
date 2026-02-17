@@ -11,9 +11,6 @@ export default function About() {
         <Hero />
       </main>
       <section className="h-[100vh]">
-        <Coffee />
-      </section>
-      <section className="h-[100vh]">
         <Tools />
       </section>
     </div>
