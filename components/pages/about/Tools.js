@@ -4,10 +4,10 @@ import Link from "next/link";
 export default function Tools() {
   return (
     <div className="bg-background font-serif px-40 py-10 h-full w-full flex flex-col">
-      <h1 className="text-9xl font-sans font-black tracking-tighter px-10 text-right translate-y-5">
-        Tech Backpack
+      <h1 className="text-9xl font-sans font-black tracking-tighter px-10 text-left translate-y-5">
+        Tech Stuff
       </h1>
-      <div className="bg-foreground w-full flex-1 rounded-2xl flex flex-col overflow-hidden p-10 text-background font-sans">
+      <div className="bg-foreground w-full flex-1 rounded-4xl flex flex-col overflow-hidden p-10 text-background font-sans">
         <div className="flex w-full h-[50%] justify-around">
           <Link
             href="https://code.visualstudio.com/"
