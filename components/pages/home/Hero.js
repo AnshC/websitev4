@@ -1,6 +1,4 @@
 import Image from "next/image";
-
-import SplitText from "@/components/ui/SplitText";
 import CircularText from "@/components/ui/CircleText";
 
 export default function Hero({ designRef }) {
