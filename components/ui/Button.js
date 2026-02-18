@@ -10,6 +10,7 @@ export default function Button({
   alt,
   iconStyles,
   onClick,
+  cursor,
 }) {
   const handleClick = (e) => {
     if (onClick) {
@@ -23,7 +24,7 @@ export default function Button({
       className={`font-sans font-bold text-xl ${className} ${alt ? "text-foreground" : "text-background"}`}
     >
       <Link
-        className={`border-3 rounded-full p-3 ${alt ? "border-foreground buttonShadowAlt" : "border-background buttonShadow"} w-max flex items-center`}
+        className={`${cursor ? cursor : "cursor-pointer"} border-3 rounded-full p-3 ${alt ? "border-foreground buttonShadowAlt" : "border-background buttonShadow"} w-max flex items-center`}
         href={href}
         onClick={handleClick}
       >
