@@ -54,21 +54,23 @@ export default function Projects() {
             2026
           </h2>
           {projects["2026"].map((project) => (
-            <Link
-              href={project.link ? project.link : ""}
-              key={project.id}
-              className="cursor-target cursor-none p-10 mb-20"
-            >
-              <h3 className="font-serif text-5xl text-left tracking-tighter">
-                {project.title}
-                <span className="text-2xl italic ml-5 tracking-normal text-slate-400">
-                  {project.languages.join(", ")}
-                </span>
-              </h3>
-              <p className="font-serif text-2xl text-left">
-                {project.description}
-              </p>
-            </Link>
+            <div className="mb-10 p-10 cursor-target">
+              <Link
+                href={project.link ? project.link : ""}
+                key={project.id}
+                className="cursor-none"
+              >
+                <h3 className="font-serif text-5xl text-left tracking-tighter">
+                  {project.title}
+                  <span className="text-2xl italic ml-5 tracking-normal text-slate-400">
+                    {project.languages.join(", ")}
+                  </span>
+                </h3>
+                <p className="font-serif text-2xl text-left">
+                  {project.description}
+                </p>
+              </Link>
+            </div>
           ))}
         </section>
         <section className="px-40">
@@ -76,21 +78,23 @@ export default function Projects() {
             2025
           </h2>
           {projects["2025"].map((project) => (
-            <Link
-              href={project.link ? project.link : ""}
-              key={project.id}
-              className="cursor-target p-10 mb-20"
-            >
-              <h3 className="font-serif text-5xl text-left tracking-tighter">
-                {project.title}
-                <span className="text-2xl italic ml-5 tracking-normal text-slate-400">
-                  {project.languages.join(", ")}
-                </span>
-              </h3>
-              <p className="font-serif text-2xl text-left">
-                {project.description}
-              </p>
-            </Link>
+            <div className="mb-10 p-10 cursor-target">
+              <Link
+                href={project.link ? project.link : ""}
+                key={project.id}
+                className="cursor-none"
+              >
+                <h3 className="font-serif text-5xl text-left tracking-tighter">
+                  {project.title}
+                  <span className="text-2xl italic ml-5 tracking-normal text-slate-400">
+                    {project.languages.join(", ")}
+                  </span>
+                </h3>
+                <p className="font-serif text-2xl text-left">
+                  {project.description}
+                </p>
+              </Link>
+            </div>
           ))}
         </section>
         <section className="px-40">
@@ -98,21 +102,23 @@ export default function Projects() {
             2024
           </h2>
           {projects["2024"].map((project) => (
-            <Link
-              href={project.link ? project.link : ""}
-              key={project.id}
-              className="cursor-target p-10 mb-20"
-            >
-              <h3 className="font-serif text-5xl text-left tracking-tighter">
-                {project.title}
-                <span className="text-2xl italic ml-5 tracking-normal text-slate-400">
-                  {project.languages.join(", ")}
-                </span>
-              </h3>
-              <p className="font-serif text-2xl text-left">
-                {project.description}
-              </p>
-            </Link>
+            <div className="mb-10 p-10 cursor-target">
+              <Link
+                href={project.link ? project.link : ""}
+                key={project.id}
+                className="cursor-none"
+              >
+                <h3 className="font-serif text-5xl text-left tracking-tighter">
+                  {project.title}
+                  <span className="text-2xl italic ml-5 tracking-normal text-slate-400">
+                    {project.languages.join(", ")}
+                  </span>
+                </h3>
+                <p className="font-serif text-2xl text-left">
+                  {project.description}
+                </p>
+              </Link>
+            </div>
           ))}
         </section>
       </div>
