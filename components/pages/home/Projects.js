@@ -55,7 +55,7 @@ export default function ProjectSection() {
         </Card>
       </div>
       <div className="flex justify-between">
-        <Button href="/designs" icon={<TiArrowRightThick />} alt>
+        <Button href="/projects" icon={<TiArrowRightThick />} alt>
           View Projects
         </Button>
         <Button href="https://github.com/AnshC" icon={<FaGithub />} alt>
