@@ -1,0 +1,16 @@
+{
+  "2025": [
+    {
+      "id": "circadian",
+      "title": "Circadian",
+      "description": "Circadian is a social sleep tracking app that turns healthy sleep habits into a shared experience. Users log their sleep, track streaks, and compete with friends through leaderboards and accountability features—making better rest feel less like a chore and more like a game. I built this as part of a six-person team in EECS 498 (Mobile App Development), working as a frontend developer. My focus was implementing SwiftUI interfaces from our Figma mockups, building interactive data visualizations with Swift Charts, and ensuring clean code structure through MVVM architecture. We rotated team leadership each sprint, so I also gained experience driving planning sessions and coordinating across frontend and backend work.",
+      "languages": ["Swift", "SwiftUI", "Go"]
+    },
+    {
+      "id": "visualizing-f1-positions",
+      "title": "Visualizing F1 Positions",
+      "description": "Visualizing F1 Positions is a single-page web application that transforms real-time Formula 1 race data into interactive, easy-to-understand visual stories. Users can explore how driver positions change lap by lap, compare performance trends, and gain deeper insight into race dynamics through dynamic charts and responsive controls—turning raw telemetry into engaging visual analysis. I built this project independently using React.js, integrating live race data from the OpenF1 API with Axios and converting it into interactive visualizations with Google Charts. My focus was designing a responsive, accessible UI while structuring the app with modular components and React hooks for clean state and data management. I also optimized front-end performance to ensure smooth rendering of frequently updating datasets, emphasizing scalability and maintainable code architecture.",
+      "languages": ["React", "Axios", "Google Charts"]
+    }
+  ]
+}
