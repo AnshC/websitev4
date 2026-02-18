@@ -4,12 +4,15 @@ import { useState } from "react";
 import Button from "@/components/ui/Button";
 import { FaHouseChimney, FaGithub } from "react-icons/fa6";
 import TargetCursor from "@/components/ui/TargetCursor";
+import { ReactLenis } from "lenis/react";
+import Link from "next/link";
 
 export default function Projects() {
   const [projects, setProjects] = useState(data);
 
   return (
     <div className="w-full bg-background">
+      <ReactLenis />
       <div className="px-40 flex absolute justify-between font-serif py-10 text-4xl w-full z-20">
         <div className="flex items-center justify-center">
           <Button
@@ -48,23 +51,69 @@ export default function Projects() {
         />
         <section className="px-40">
           <h2 className="font-serif text-[200px] text-left tracking-tighter">
-            2025
+            2026
           </h2>
-          {projects["2025"].map((project) => (
-            <div key={project.id} className="cursor-target p-10 mb-20">
+          {projects["2026"].map((project) => (
+            <Link
+              href={project.link ? project.link : ""}
+              key={project.id}
+              className="cursor-target cursor-none p-10 mb-20"
+            >
               <h3 className="font-serif text-5xl text-left tracking-tighter">
                 {project.title}
+                <span className="text-2xl italic ml-5 tracking-normal text-slate-400">
+                  {project.languages.join(", ")}
+                </span>
               </h3>
               <p className="font-serif text-2xl text-left">
                 {project.description}
               </p>
-            </div>
+            </Link>
+          ))}
+        </section>
+        <section className="px-40">
+          <h2 className="font-serif text-[200px] text-left tracking-tighter">
+            2025
+          </h2>
+          {projects["2025"].map((project) => (
+            <Link
+              href={project.link ? project.link : ""}
+              key={project.id}
+              className="cursor-target p-10 mb-20"
+            >
+              <h3 className="font-serif text-5xl text-left tracking-tighter">
+                {project.title}
+                <span className="text-2xl italic ml-5 tracking-normal text-slate-400">
+                  {project.languages.join(", ")}
+                </span>
+              </h3>
+              <p className="font-serif text-2xl text-left">
+                {project.description}
+              </p>
+            </Link>
           ))}
         </section>
         <section className="px-40">
           <h2 className="font-serif text-[200px] text-left tracking-tighter">
             2024
           </h2>
+          {projects["2024"].map((project) => (
+            <Link
+              href={project.link ? project.link : ""}
+              key={project.id}
+              className="cursor-target p-10 mb-20"
+            >
+              <h3 className="font-serif text-5xl text-left tracking-tighter">
+                {project.title}
+                <span className="text-2xl italic ml-5 tracking-normal text-slate-400">
+                  {project.languages.join(", ")}
+                </span>
+              </h3>
+              <p className="font-serif text-2xl text-left">
+                {project.description}
+              </p>
+            </Link>
+          ))}
         </section>
       </div>
     </div>

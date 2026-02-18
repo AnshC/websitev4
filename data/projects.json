@@ -1,4 +1,13 @@
 {
+  "2026": [
+    {
+      "id": "personal-website",
+      "title": "Personal Website",
+      "description": "My Personal Website is a modern, interactive portfolio that showcases my design work and software engineering projects in a cohesive, thoughtfully structured space. It serves as both a visual gallery and a technical portfolio, allowing visitors to explore my creative process, development experience, and featured builds through a clean, responsive interface. I built the site using Next.js and Tailwind CSS, leveraging Reactbits components to create dynamic, polished UI elements. My focus was on performance, scalability, and strong visual hierarchy—structuring the application with reusable components and optimized routing while maintaining a sleek, minimal aesthetic. The result is a fast, maintainable portfolio platform that highlights both my design sensibilities and front-end engineering skills.",
+      "languages": ["Next", "Tailwind"],
+      "link": "/"
+    }
+  ],
   "2025": [
     {
       "id": "circadian",
@@ -10,7 +19,17 @@
       "id": "visualizing-f1-positions",
       "title": "Visualizing F1 Positions",
       "description": "Visualizing F1 Positions is a single-page web application that transforms real-time Formula 1 race data into interactive, easy-to-understand visual stories. Users can explore how driver positions change lap by lap, compare performance trends, and gain deeper insight into race dynamics through dynamic charts and responsive controls—turning raw telemetry into engaging visual analysis. I built this project independently using React.js, integrating live race data from the OpenF1 API with Axios and converting it into interactive visualizations with Google Charts. My focus was designing a responsive, accessible UI while structuring the app with modular components and React hooks for clean state and data management. I also optimized front-end performance to ensure smooth rendering of frequently updating datasets, emphasizing scalability and maintainable code architecture.",
-      "languages": ["React", "Axios", "Google Charts"]
+      "languages": ["React", "Axios", "Google Charts"],
+      "link": "https://f1positions.com/"
+    }
+  ],
+  "2024": [
+    {
+      "id": "espresso-explained",
+      "title": "Espresso Explained",
+      "description": "Espresso Explained is a lightweight educational web application that acts as a digital dictionary for common café coffee drinks. Users can explore beverages like espresso, cappuccino, and latte macchiato through a clean, responsive interface enhanced with interactive visual elements. Designed and developed for SI 339 at the University of Michigan, the project focuses on clarity, accessibility, and engaging front-end design. Built with HTML, CSS, and JavaScript, I incorporated Vanilla-Tilt for subtle 3D hover effects, Particles.js for dynamic backgrounds, and model-viewer to display interactive 3D models. The result is a polished, user-friendly site that combines simple educational content with immersive web interactions.",
+      "languages": ["HTML/CSS/JS", "ModelViewer"],
+      "link": "https://anshc.github.io/espresso-explained/"
     }
   ]
 }
