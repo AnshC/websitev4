@@ -1,4 +1,3 @@
-// app/page.js (or wherever)
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Navbar from "@/components/ui/Navbar";
@@ -38,19 +37,23 @@ export default function Home() {
     <div ref={containerRef} className={`font-sans ${styles.homeComponent}`}>
       <Navbar variant={navVariant} />
 
-      <main className="h-[100vh]">
+      <main className="h-[100vh] bg-background pt-20">
         <Hero designRef={designRef} />
       </main>
 
-      <section id="design" className="h-[100vh]" ref={designRef}>
+      <section
+        id="design"
+        className="h-[100vh] bg-foreground pt-20"
+        ref={designRef}
+      >
         <DesignSection />
       </section>
 
-      <section className="h-[100vh]">
+      <section className="h-[100vh] bg-background pt-20">
         <ProjectSection />
       </section>
 
-      <section className="h-[100vh]">
+      <section className="h-[100vh] bg-background pt-20">
         <ContactSection />
       </section>
     </div>
