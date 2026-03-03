@@ -45,6 +45,12 @@ body {
     overflow-x: hidden;
 }
 
+html,
+body,
+* {
+    overscroll-behavior: none;
+}
+
 /* Global Styles */
 
 .hover-underline-animation {
