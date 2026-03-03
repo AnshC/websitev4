@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import "./ui.css";
-
 export default function Button({
   children,
   href,
@@ -18,19 +17,20 @@ export default function Button({
       onClick(e);
     }
   };
-
   return (
     <div
-      className={`font-sans font-bold text-xl ${className} ${alt ? "text-foreground" : "text-background"}`}
+      className={`font-sans font-bold text-base md:text-xl ${className} ${alt ? "text-foreground" : "text-background"}`}
     >
       <Link
-        className={`${cursor ? cursor : "cursor-pointer"} border-3 rounded-full p-3 ${alt ? "border-foreground buttonShadowAlt" : "border-background buttonShadow"} w-max flex items-center`}
+        className={`${cursor ? cursor : "cursor-pointer"} border-3 rounded-full p-2 md:p-3 ${alt ? "border-foreground buttonShadowAlt" : "border-background buttonShadow"} w-max flex items-center`}
         href={href}
         onClick={handleClick}
       >
         <div>{children}</div>
         {icon ? (
-          <div className={children ? `ml-2 text-2xl` : iconStyles}>{icon}</div>
+          <div className={children ? `ml-2 text-xl md:text-2xl` : iconStyles}>
+            {icon}
+          </div>
         ) : (
           ""
         )}
