@@ -5,7 +5,8 @@
     transition: all 0.1s ease;
 }
 
-.buttonShadow:hover, .buttonShadowAlt:hover {
+.buttonShadow:hover,
+.buttonShadowAlt:hover {
     translate: -7px 7px;
     box-shadow: none;
 }
@@ -21,4 +22,15 @@
 
 .cardComponent:hover {
     transform: scale(1.07);
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 640px) {
+    .cardComponent {
+        transition: none;
+    }
+    .cardComponent:hover {
+        transform: none;
+    }
 }
