@@ -9,8 +9,8 @@ export default function Hero({ designRef }) {
   };
 
   return (
-    <div className="relative h-full flex items-center justify-center">
-      <div className="relative h-full aspect-square rounded-full overflow-hidden">
+    <div className="relative h-full flex flex-col items-center justify-center">
+      <div className="relative aspect-square rounded-full overflow-hidden md:h-full md:aspect-square w-[300px] h-[300px] md:w-auto mb-10 md:mb-0">
         <Image
           src="/img/hero.jpg"
           alt="Hero"
@@ -19,15 +19,18 @@ export default function Hero({ designRef }) {
           className="object-cover grayscale brightness-50"
         />
       </div>
-      <div className="absolute text-center text-foreground flex flex-col">
-        <h1 className="text-[200px] font-black tracking-tighter p-1">
+      <div className="relative text-center text-foreground flex flex-col px-10 md:absolute px-0">
+        <h1 className="font-black tracking-tighter p-1 text-6xl sm:text-7xl md:text-[96px] lg:text-[128px] 2xl:text-[180px]">
           Ansh Chauhan
         </h1>
-        <p className="font-serif text-6xl p-1 translate-y-[-40px]">
+        <p className="font-serif p-1 text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
           Web Dev. Design. Coffee.
         </p>
       </div>
-      <div className="absolute bottom-0 right-0 m-30" onClick={handleClick}>
+      <div
+        className="absolute bottom-0 right-0 m-30 hidden lg:block"
+        onClick={handleClick}
+      >
         <CircularText
           text="SCROLL*DOWN*"
           onHover="speedUp"

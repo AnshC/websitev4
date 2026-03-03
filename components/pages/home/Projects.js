@@ -1,5 +1,4 @@
 import ShadowText from "@/components/ui/ShadowText";
-
 import Button from "@/components/ui/Button";
 import { TiArrowRightThick } from "react-icons/ti";
 import { FaReact } from "react-icons/fa";
@@ -9,49 +8,63 @@ import { LuRotate3D } from "react-icons/lu";
 import { SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
-
+import "./sections.css";
 import Card from "@/components/ui/Card";
-
 export default function ProjectSection() {
   return (
-    <div className="bg-background w-full text-foreground flex flex-col justify-center h-full px-40">
-      <ShadowText alt>Development.</ShadowText>
-      <p className="font-serif text-4xl">
-        “Developed, with design. View a collection of my projects crafted with a
+    <div className="bg-background w-full text-foreground flex flex-col justify-center h-full px-5 sm:px-10 md:px-30">
+      <ShadowText alt>
+        <span className="hidden sm:inline">Development.</span>
+        <span className="sm:hidden">Code.</span>
+      </ShadowText>
+      <p className="font-serif text-2xl sm:text-3xl">
+        "Developed, with design. View a collection of my projects crafted with a
         focus on minimal design, seamless user experience, and accessibility at
-        their core.”
+        their core."
       </p>
-      <div className="flex my-[50px]">
+      <div className="hideScrollbar flex flex-row overflow-x-auto md:overflow-x-visible my-6 md:my-[50px] gap-4 md:gap-0 pb-2 md:pb-0">
         <Card
           href="https://f1positions.com"
+          className="min-w-[220px] md:min-w-0"
           tags={[
             { title: "React.js", icon: <FaReact /> },
             { title: "Google Charts", icon: <BsGraphUp /> },
           ]}
         >
-          <h3 className="text-4xl font-bold">Visualizing F1 Positions</h3>
-          <p className="text-lg">Graphing Driver Positions.</p>
+          <h3 className="text-xl xl:text-2xl 2xl:text-4xl font-bold">
+            Visualizing F1 Positions
+          </h3>
+          <p className="text-sm xl:text-base 2xl:text-lg">
+            Graphing Driver Positions.
+          </p>
         </Card>
         <Card
           href="https://anshc.github.io/espresso-explained/index.html"
-          className={"mx-10"}
+          className="min-w-[220px] md:min-w-0 md:mx-10"
           tags={[
             { title: "JavaScript", icon: <IoLogoJavascript /> },
             { title: "ModelViewer", icon: <LuRotate3D /> },
           ]}
         >
-          <h3 className="text-4xl font-bold">Espresso Explained</h3>
-          <p className="text-lg">Cappuccino or a Latte?</p>
+          <h3 className="text-xl xl:text-2xl 2xl:text-4xl font-bold">
+            Espresso Explained
+          </h3>
+          <p className="text-sm xl:text-base 2xl:text-lg">
+            Cappuccino or a Latte?
+          </p>
         </Card>
         <Card
           href="https://anshc.netlify.app"
+          className="min-w-[220px] md:min-w-0"
           tags={[
             { title: "Next.js", icon: <SiNextdotjs /> },
             { title: "Tailwind", icon: <RiTailwindCssFill /> },
           ]}
         >
-          <h3 className="text-4xl font-bold">Personal Portfolio</h3>
-          <p className="text-lg">This Website.</p>
+          <h3 className="text-xl xl:text-2xl 2xl:text-4xl font-bold">
+            Personal Portfolio
+          </h3>
+          <p className="text-sm xl:text-base 2xl:text-lg">This Website.</p>
         </Card>
       </div>
       <div className="flex justify-between">
