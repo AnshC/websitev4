@@ -5,24 +5,24 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
-const buttons = (alt) => (
+const buttons = (alt, showText = true) => (
   <div className="flex flex-wrap justify-center gap-4">
     <Button href="mailto:anshch@umich.edu" icon={<SiGmail />} alt={alt}>
-      Email
+      {showText ? "Email" : null}
     </Button>
     <Button
       href="https://www.linkedin.com/in/anshc05/"
       icon={<FaLinkedinIn />}
       alt={alt}
     >
-      LinkedIn
+      {showText ? "LinkedIn" : null}
     </Button>
     <Button
       href="https://www.instagram.com/ansh.c05/"
       icon={<RiInstagramFill />}
       alt={alt}
     >
-      Instagram
+      {showText ? "Instagram" : null}
     </Button>
   </div>
 );
@@ -40,11 +40,11 @@ export default function ContactSection() {
               Me!
             </span>
           </ShadowText>
-          {buttons(true)}
+          {buttons(true, false)}
         </div>
         <div className="hidden xl:block">
           <ShadowText className="-translate-x-3">Contact Me!</ShadowText>
-          {buttons(false)}
+          {buttons(false, true)}
         </div>
       </div>
       <p className="mt-10 xl:mt-25">Developed & Design by Me.</p>
