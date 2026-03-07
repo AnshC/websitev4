@@ -9,7 +9,7 @@
         "primary": "rgba(186, 33, 211)"
       },
       "img": "/img/designs/the-color-violet.png",
-      "url": "/img/designs/the-color-violet.png"
+      "url": "/img/previews/the-color-violet.jpg"
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       },
       "height": 600,
       "img": "/img/designs/gt40.png",
-      "url": "/img/designs/gt40.png"
+      "url": "/img/previews/gt40.jpg"
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
       },
       "height": 600,
       "img": "/img/designs/starry-eyes.jpg",
-      "url": "/img/designs/starry-eyes.jpg"
+      "url": "/img/previews/starry-eyes.jpg"
     },
     {
       "id": 4,
@@ -43,7 +43,7 @@
 
       "height": 600,
       "img": "/img/designs/burning-love.png",
-      "url": "/img/designs/burning-love.png"
+      "url": "/img/previews/burning-love.jpg"
     },
     {
       "id": 5,
@@ -54,7 +54,7 @@
       },
       "height": 600,
       "img": "/img/designs/chrome.png",
-      "url": "/img/designs/chrome.png"
+      "url": "/img/previews/chrome.jpg"
     },
     {
       "id": 6,
@@ -65,7 +65,7 @@
       },
       "height": 600,
       "img": "/img/designs/959.png",
-      "url": "/img/designs/959.png"
+      "url": "/img/previews/959.jpg"
     },
     {
       "id": 7,
@@ -76,7 +76,7 @@
       },
       "height": 600,
       "img": "/img/designs/afterhours-retro.png",
-      "url": "/img/designs/afterhours-retro.png"
+      "url": "/img/previews/afterhours-retro.jpg"
     },
     {
       "id": 8,
@@ -87,7 +87,7 @@
       },
       "height": 600,
       "img": "/img/designs/c1.png",
-      "url": "/img/designs/c1.png"
+      "url": "/img/previews/c1.jpg"
     },
     {
       "id": 9,
@@ -98,7 +98,7 @@
       },
       "height": 600,
       "img": "/img/designs/dawnfm-retro.png",
-      "url": "/img/designs/dawnfm-retro.png"
+      "url": "/img/previews/dawnfm-retro.jpg"
     },
     {
       "id": 10,
@@ -109,7 +109,7 @@
       },
       "height": 600,
       "img": "/img/designs/db5.png",
-      "url": "/img/designs/db5.png"
+      "url": "/img/previews/db5.jpg"
     },
     {
       "id": 11,
@@ -120,7 +120,7 @@
       },
       "height": 600,
       "img": "/img/designs/deep-in-the-water.png",
-      "url": "/img/designs/deep-in-the-water.png"
+      "url": "/img/previews/deep-in-the-water.jpg"
     },
     {
       "id": 12,
@@ -131,7 +131,7 @@
       },
       "height": 600,
       "img": "/img/designs/f40.png",
-      "url": "/img/designs/f40.png"
+      "url": "/img/previews/f40.jpg"
     },
     {
       "id": 13,
@@ -142,7 +142,7 @@
       },
       "height": 600,
       "img": "/img/designs/gt500.png",
-      "url": "/img/designs/gt500.png"
+      "url": "/img/previews/gt500.jpg"
     },
     {
       "id": 14,
@@ -153,7 +153,7 @@
       },
       "height": 600,
       "img": "/img/designs/montreal.jpg",
-      "url": "/img/designs/montreal.jpg"
+      "url": "/img/previews/montreal.jpg"
     },
     {
       "id": 15,
@@ -164,7 +164,7 @@
       },
       "height": 600,
       "img": "/img/designs/p1.png",
-      "url": "/img/designs/p1.png"
+      "url": "/img/previews/p1.jpg"
     },
     {
       "id": 16,
@@ -175,7 +175,7 @@
       },
       "height": 600,
       "img": "/img/designs/rx7.png, 0.2",
-      "url": "/img/designs/rx7.png"
+      "url": "/img/previews/rx7.jpg"
     },
     {
       "id": 17,
@@ -186,7 +186,7 @@
       },
       "height": 600,
       "img": "/img/designs/s2000.png",
-      "url": "/img/designs/s2000.png"
+      "url": "/img/previews/s2000.jpg"
     },
     {
       "id": 18,
@@ -197,7 +197,7 @@
       },
       "height": 600,
       "img": "/img/designs/supra.png",
-      "url": "/img/designs/supra.png"
+      "url": "/img/previews/supra.jpg"
     }
   ]
 }

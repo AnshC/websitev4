@@ -38,7 +38,7 @@ export default function Design() {
       <section className="w-full px-40 flex flex-wrap items-center justify-center z-5 mb-20">
         {items.map((img) => {
           return (
-            <Link href={img.url} key={img.id}>
+            <Link href={img.img} key={img.id}>
               <div
                 className="w-100 h-100 relative m-5"
                 onMouseEnter={(e) => {
