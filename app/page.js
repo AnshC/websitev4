@@ -37,7 +37,7 @@ export default function Home() {
     <div ref={containerRef} className={`font-sans ${styles.homeComponent}`}>
       <Navbar variant={navVariant} />
 
-      <main className="h-[100vh] bg-background pt-20">
+      <main className="h-[100vh] bg-background">
         <Hero designRef={designRef} />
       </main>
 
