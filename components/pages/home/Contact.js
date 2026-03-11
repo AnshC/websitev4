@@ -47,7 +47,7 @@ export default function ContactSection() {
           {buttons(false, true)}
         </div>
       </div>
-      <p className="mt-10 xl:mt-25">Developed & Design by Me.</p>
+      <p className="mb-20 xl:mt-20 xl:mb-0">Developed & Design by Me.</p>
     </div>
   );
 }
