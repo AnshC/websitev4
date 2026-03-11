@@ -1,5 +1,4 @@
 import { Montserrat, Instrument_Serif } from "next/font/google";
-import ClickSpark from "@/components/ui/ClickSpark";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -24,15 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.variable} ${instrument_serif.variable} antialiased`}
       >
-        <ClickSpark
-          sparkColor="#fff"
-          sparkSize={10}
-          sparkRadius={15}
-          sparkCount={8}
-          duration={400}
-        >
-          {children}
-        </ClickSpark>
+        {children}
       </body>
     </html>
   );
