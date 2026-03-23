@@ -54,7 +54,7 @@ export default function ProjectSection() {
           </p>
         </Card>
         <Card
-          href="https://anshc.netlify.app"
+          href="https://anshc.vercel.app/"
           className="min-w-[220px] md:min-w-0"
           tags={[
             { title: "Next.js", icon: <SiNextdotjs /> },
